@@ -26,7 +26,7 @@ def SolFractureElasStatics(FemInf,MatInf,MacroInf):
     FemInf = SolFEM.SolElasStatics(FemInf,MatInf,MacroInf)
     
     #------ solve Phase Field
-    Phase = SolPha.SolPhaseField(FemInf,MatInf,MacroInf)
+    FemInf = SolPha.SolPhaseField(FemInf,MatInf,MacroInf)
 
     return FemInf
     
